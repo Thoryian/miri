@@ -5,16 +5,12 @@
     --button-border: rgba(0, 0, 0, .1);
     --button-background: rgba(255, 255, 255, .3);
     --button-hover: rgba(0, 0, 0, .06);
-
-    /* Brand Colors */
     --discord-color: #5865F2;
     --youtube-color: #FF0000;
     --steam-color: #1b2838;
     --email-color: #EA4335;
     --status-color: #00C853;
     --roblox-color: #00A2FF;
-
-    /* Tech Colors */
     --linux-color: #FCC624;
     --html-color: #E34F26;
     --css-color: #1572B6;
@@ -177,7 +173,6 @@ body {
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-/* Skill-specific icon colors */
 .skill:hover i.fa-linux { color: var(--linux-color); }
 .skill:hover i.fa-html5 { color: var(--html-color); }
 .skill:hover i.fa-css3-alt, 
@@ -196,7 +191,6 @@ footer {
     font-size: 0.8rem;
 }
 
-/* Special hover effects */
 .skill:hover,
 .contact-button:hover {
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
