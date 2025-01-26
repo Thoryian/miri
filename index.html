@@ -1,74 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>oncemiri.net</title>
-<meta property="og:title" content="miri">
-<meta property="og:description" content="dev">
-<meta property="og:image" content="/src/img/favicon.png">
-<meta property="og:color" content="#1a1a1a">
-<meta name="twitter:title" content="miri">
-<meta name="twitter:description" content="dev">
-<meta name="twitter:image" content="/src/img/favicon.png">
-<meta name="twitter:color" content="#1a1a1a">
-<link rel="stylesheet" href="/src/styles/main.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-<link rel="icon" href="/src/img/favicon.png">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit|blink|gecko|trident" />
+    <title>Service Shutdown</title>
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+        }
+
+        html {
+            height: 100%;
+            width: 100%;
+            overflow-x: hidden;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        body {
+            min-height: 100vh;
+            min-height: -webkit-fill-available;
+            min-height: fill-available;
+            background: #000000;
+            color: #ffffff;
+            font-family: 
+                "MS Sans Serif", 
+                "Geneva", 
+                -apple-system, 
+                BlinkMacSystemFont, 
+                "Segoe UI", 
+                Roboto, 
+                Oxygen, 
+                Ubuntu, 
+                Cantarell, 
+                "Open Sans", 
+                "Helvetica Neue", 
+                sans-serif;
+            font-size: calc(12px + 0.5vw);
+            line-height: 1.5;
+            text-align: center;
+            word-wrap: break-word;
+            word-break: break-word;
+            hyphens: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+            word-spacing: normal;
+        }
+
+        main {
+            max-width: 90vw;
+            width: 100%;
+            padding: 1rem;
+        }
+
+        @supports (min-height: 100dvh) {
+            body {
+                min-height: 100dvh;
+            }
+        }
+
+        @media all and (min-width: 0px) {
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        @media screen and (max-width: 320px) {
+            body {
+                font-size: 10px;
+            }
+        }
+
+        @media screen and (min-width: 1920px) {
+            body {
+                font-size: 18px;
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+                color: black;
+            }
+        }
+    </style>
+    <noscript>
+        <meta http-equiv="refresh" content="0;url=data:text/plain,all%20services%20are%20shut%20down.%0Athis%20site%20no%20longer%20serves%20a%20purpose." />
+    </noscript>
 </head>
 <body>
-    <div id="scroll-container">
-        <div id="body-content">
-            <section id="introduction" class="section">
-                <div id="introduction-top">
-                    <div class="paragraph">
-                        <h1 class="title">oncemiri</h1>
-                        <p class="body">full stack developer.. that basically only knows web dev</p>
-                    </div>
-                    <div id="contacts">
-                        <a href="mailto:oncemiri@gmail.com" class="contact-button" aria-label="Email">
-                            <i class="fa-solid fa-envelope"></i>
-                        </a>
-                        <a href="https://discord.gg/oncemiri" class="contact-button" aria-label="Discord">
-                            <i class="fa-brands fa-discord"></i>
-                        </a>
-                        <a href="https://youtube.com/@oncemiri" class="contact-button" aria-label="YouTube">
-                            <i class="fa-brands fa-youtube"></i>
-                        </a>
-                        <a href="https://www.roblox.com/users/profile?username=oncemiri" class="contact-button" aria-label="Roblox">
-                            <i class="fa-solid fa-gamepad"></i>
-                        </a>
-                        <a href="https://steamcommunity.com/id/oncemiri" class="contact-button" aria-label="Steam">
-                            <i class="fa-brands fa-steam"></i>
-                        </a>
-                        <a href="https://status.oncemiri.net/" class="contact-button" aria-label="Service Status">
-                            <i class="fa-solid fa-signal"></i>
-                        </a>
-                    </div>
-                </div>
-            </section>
-            <section id="skills" class="section">
-                <div class="rectangle-shape skill-container">
-                    <div class="skill-grid">
-                        <div class="skill" data-tech="Linux"><i class="fa-brands fa-linux"></i> Linux</div>
-                        <div class="skill" data-tech="HTML"><i class="fa-brands fa-html5"></i> HTML</div>
-                        <div class="skill" data-tech="CSS"><i class="fa-brands fa-css3-alt"></i> CSS</div>
-                        <div class="skill" data-tech="Tailwind CSS"><i class="fa-brands fa-css3"></i> Tailwind</div>
-                        <div class="skill" data-tech="JavaScript"><i class="fa-brands fa-js"></i> JS</div>
-                        <div class="skill" data-tech="Node.js"><i class="fa-brands fa-node-js"></i> Node.JS</div>
-                        <div class="skill" data-tech="Ruby (programming language)"><i class="fa-solid fa-gem"></i> Ruby</div>
-                        <div class="skill" data-tech="Go (programming language)"><i class="fa-brands fa-golang"></i> Go</div>
-                        <div class="skill" data-tech="React (JavaScript library)"><i class="fa-brands fa-react"></i> React</div>
-                        <div class="skill" data-tech="Three.js"><i class="fa-solid fa-cube"></i> three.js</div>
-                        <div class="skill" data-tech="Next.js"><i class="fa-brands fa-react"></i> next.js</div>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </div>
-    <footer>
-        <p>© 2024-2025 oncemiri.net | v1.2 dev</p>
-    </footer>
-    <script src="/src/js/main.js"></script>
+    <main>
+        all services are shut down.<br>
+        this site no longer serves a purpose.
+    </main>
+
+    <script>
+        (function() {
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.getRegistrations().then(function(registrations) {
+                    for (let registration of registrations) {
+                        registration.unregister();
+                    }
+                });
+            }
+
+            window.addEventListener('error', function(e) {
+                console.error(e);
+                return true;
+            });
+        })();
+    </script>
 </body>
 </html>
