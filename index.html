@@ -1,129 +1,70 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="renderer" content="webkit|blink|gecko|trident" />
-    <title>Service Shutdown</title>
+    <meta charset="utf-8">
+    <title>miri@oncemiri:~$</title>
     <style>
-        *,
-        *::before,
-        *::after {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            border: 0;
-            outline: 0;
-        }
-
-        html {
-            height: 100%;
-            width: 100%;
-            overflow-x: hidden;
-            text-rendering: optimizeLegibility;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-
         body {
-            min-height: 100vh;
-            min-height: -webkit-fill-available;
-            min-height: fill-available;
-            background: #000000;
-            color: #ffffff;
-            font-family: 
-                "MS Sans Serif", 
-                "Geneva", 
-                -apple-system, 
-                BlinkMacSystemFont, 
-                "Segoe UI", 
-                Roboto, 
-                Oxygen, 
-                Ubuntu, 
-                Cantarell, 
-                "Open Sans", 
-                "Helvetica Neue", 
-                sans-serif;
-            font-size: calc(12px + 0.5vw);
-            line-height: 1.5;
-            text-align: center;
-            word-wrap: break-word;
-            word-break: break-word;
-            hyphens: auto;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin: 0;
-            padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
-            word-spacing: normal;
+            background: #000;
+            color: #fff;
+            font-family: monospace;
+            font-size: 14px;
+            line-height: 1.2;
+            margin: 20px;
+            white-space: pre-wrap;
         }
-
-        main {
-            max-width: 90vw;
-            width: 100%;
-            padding: 1rem;
+        a {
+            color: #fff;
+            text-decoration: none;
         }
-
-        @supports (min-height: 100dvh) {
-            body {
-                min-height: 100dvh;
-            }
+        a:hover {
+            text-decoration: underline;
         }
-
-        @media all and (min-width: 0px) {
-            body {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-        }
-
-        @media screen and (max-width: 320px) {
-            body {
-                font-size: 10px;
-            }
-        }
-
-        @media screen and (min-width: 1920px) {
-            body {
-                font-size: 18px;
-            }
-        }
-
-        @media print {
-            body {
-                background: white;
-                color: black;
-            }
+        .prompt {
+            color: #fff;
         }
     </style>
-    <noscript>
-        <meta http-equiv="refresh" content="0;url=data:text/plain,all%20services%20are%20shut%20down.%0Athis%20site%20no%20longer%20serves%20a%20purpose." />
-    </noscript>
 </head>
 <body>
-    <main>
-        all services are shut down.<br>
-        this site no longer serves a purpose.
-    </main>
+<div class="terminal">
+<span class="prompt">miri@oncemiri:~$ </span>fastfetch
+                   -`                    miri@oncemiri
+                  .o+`                   --------------
+                 `ooo/                   Software:
+                `+oooo:                  Nyarch Linux x86_64 (i just like the logo idk)
+               `+oooooo:                 bash 5.2.37 (kinda between zsh and bash)
+               -+oooooo+:                Hyprland 0.46.0-186-g2f55806d (Wayland)
+             `/:-:++oooo+:               
+            `/++++/+++++++:              My specs:
+           `/++++++++++++++:             GTX 1070 (gigabyte)
+          `/+++ooooooooooooo/`           i5 7600K (4.7GHZ, sometimes higher/lower) 
+         ./ooosssso++osssssso+`          16gb DDR4 i forgot the mt/s
+        .oossssso-````/ossssss+`         4.316 TB: 2TB + 500GB + 1TB + 196GB + 120GB + 400GB 
+       -osssssso.      :ssssssso.        
+      :osssssss/        osssso+++.       
+     /ossssssss/        +ssssooo/-       
+   `/ossssso+/:-        -:/+osssso+-     
+  `+sso+:-`                 `.-/+oso:    
+ `++:.                           `-/+/    
+ .`                                 `/    
 
-    <script>
-        (function() {
-            if ('serviceWorker' in navigator) {
-                navigator.serviceWorker.getRegistrations().then(function(registrations) {
-                    for (let registration of registrations) {
-                        registration.unregister();
-                    }
-                });
-            }
+<span class="prompt">miri@oncemiri:~$ </span>cat about.sh
+#!/bin/bash
+echo "full stack dev, online a lot"
 
-            window.addEventListener('error', function(e) {
-                console.error(e);
-                return true;
-            });
-        })();
-    </script>
+<span class="prompt">miri@oncemiri:~$ </span>./about.sh
+full stack dev, online a lot
+
+<span class="prompt">miri@oncemiri:~$ </span>cat skills.txt
+linux
+nuclear energy
+quantum science
+theres more im too lazy to list
+
+<span class="prompt">miri@oncemiri:~$ </span>cat links.txt
+roblox: <a href="https://www.roblox.com/users/4575669522/profile">https://www.roblox.com/users/4575669522/profile</a>
+discord: <a href="https://discord.com/users/1266530258522345574">https://discord.com/users/1266530258522345574</a>
+
+<span class="prompt">miri@oncemiri:~$ </span></div>
 </body>
 </html>
