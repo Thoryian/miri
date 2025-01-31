@@ -1,153 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>miri@oncemiri:~$</title>
+    <title>no longer hosting anything</title>
     <style>
         body {
-            background: #000;
-            color: #fff;
-            font-family: monospace;
-            font-size: 14px;
-            line-height: 1.2;
-            margin: 20px;
-            white-space: pre-wrap;
-            min-height: 100vh;
             margin: 0;
-            padding: 20px;
-            box-sizing: border-box;
-        }
-        
-        .terminal {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        
-        a {
-            color: #fff;
-            text-decoration: none;
-            cursor: pointer;
-        }
-        
-        a:hover {
-            text-decoration: underline;
-        }
-        
-        .prompt {
-            color: #fff;
-        }
-        
-        .desktop-window {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.9);
-            display: none;
+            font-family: Arial, sans-serif;
+            display: flex;
             justify-content: center;
             align-items: center;
-            z-index: 1000;
+            height: 100vh;
+            background-color: black;
+            color: white;
+            text-align: center;
+            word-wrap: break-word;
         }
-        
-        .desktop-window.active {
-            display: flex;
-        }
-        
-        .desktop-content {
-            max-width: 90%;
-            max-height: 90%;
-        }
-        
-        .desktop-content img {
-            max-width: 100%;
-            max-height: 90vh;
-            object-fit: contain;
-        }
-        
-        .close-button {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background: none;
-            border: none;
-            color: #fff;
-            font-size: 24px;
-            cursor: pointer;
-            font-family: monospace;
-        }
-        
-        @media (max-width: 600px) {
-            body {
-                font-size: 12px;
-                padding: 10px;
-            }
-            
-            .close-button {
-                top: 10px;
-                right: 10px;
-            }
+        h1 {
+            font-size: 2rem;
+            line-height: 1.5;
         }
     </style>
 </head>
 <body>
-<div class="terminal">
-<span class="prompt">miri@oncemiri:~$ </span>fastfetch
-                   -`                    miri@oncemiri
-                  .o+`                   --------------
-                 `ooo/                   Software:
-                `+oooo:                  Nyarch Linux x86_64 (i just like the logo idk)
-               `+oooooo:                 bash 5.2.37 (kinda between zsh and bash)
-               -+oooooo+:                Hyprland 0.46.0-186-g2f55806d (Wayland)
-             `/:-:++oooo+:               
-            `/++++/+++++++:              My specs:
-           `/++++++++++++++:             GTX 1070 (gigabyte)
-          `/+++ooooooooooooo/`           i5 7600K (4.7GHZ, sometimes higher/lower) 
-         ./ooosssso++osssssso+`          16gb DDR4 i forgot the mt/s
-        .oossssso-````/ossssss+`         4.316 TB: 2TB + 500GB + 1TB + 196GB + 120GB + 400GB 
-       -osssssso.      :ssssssso.        
-      :osssssss/        osssso+++.       
-     /ossssssss/        +ssssooo/-       
-   `/ossssso+/:-        -:/+osssso+-     
-  `+sso+:-`                 `.-/+oso:    
- `++:.                           `-/+/    
- .`                                 `/   (sorry if this is weird on mobile idk what to tell you)
-<span class="prompt">miri@oncemiri:~$ </span>cat about.sh
-#!/bin/bash
-echo "full stack dev, online a lot"
-<span class="prompt">miri@oncemiri:~$ </span>./about.sh
-full stack dev, online a lot
-<span class="prompt">miri@oncemiri:~$ </span>cat skills.txt
-linux
-nuclear energy
-quantum science
-theres more im too lazy to list
-<span class="prompt">miri@oncemiri:~$ </span>cat links.txt
-roblox: <a href="https://www.roblox.com/users/4575669522/profile">https://www.roblox.com/users/4575669522/profile</a>
-discord: <a href="https://discord.com/users/1266530258522345574">https://discord.com/users/1266530258522345574</a>
-desktop: <a href="#" onclick="toggleDesktop(); return false;">desktop</a>
-<span class="prompt">miri@oncemiri:~$ </span></div>
-
-<div class="desktop-window" id="desktopWindow">
-    <button class="close-button" onclick="toggleDesktop()">×</button>
-    <div class="desktop-content">
-        <img src="https://oncemiri.net/image.png" alt="Desktop">
-    </div>
-</div>
-
-<script>
-function toggleDesktop() {
-    const window = document.getElementById('desktopWindow');
-    window.classList.toggle('active');
-}
-
-document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') {
-        const window = document.getElementById('desktopWindow');
-        window.classList.remove('active');
-    }
-});
-</script>
+    <h1>no longer hosting anything because it's impossible to host because my internet will just constantly get shutdown and there's no reason to try anymore</h1>
 </body>
 </html>
